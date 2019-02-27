@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/size_16dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_book"
+        android:drawablePadding="@dimen/size_5dp"
+        tools:text="Sách mới"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size_high" />
+
+    <TextView
+        android:id="@+id/txtViewMore"
+        fontPath="fonts/Roboto-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="Xem thêm"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_size_normal"
+        tools:ignore="MissingPrefix" />
+</RelativeLayout>

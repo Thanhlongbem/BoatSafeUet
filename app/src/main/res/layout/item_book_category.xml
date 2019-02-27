@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/size_5dp">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgBookThumb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="matrix"
+            app:layout_constraintDimensionRatio="3:4"
+            android:transitionName="imgBookThumb"/>
+
+        <TextView
+            android:id="@+id/txtCountLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:text="12"
+            android:drawableLeft="@drawable/ic_like"
+            android:drawablePadding="@dimen/size_2dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_mini"
+            android:layout_marginTop="@dimen/size_5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgBookThumb"/>
+        <TextView
+            android:id="@+id/txtCountListen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:text="36"
+            android:drawableLeft="@drawable/ic_headset"
+            android:drawablePadding="@dimen/size_2dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_size_mini"
+            android:layout_marginTop="@dimen/size_5dp"
+            app:layout_constraintStart_toEndOf="@id/txtCountLike"
+            app:layout_constraintTop_toBottomOf="@id/imgBookThumb"/>
+
+        <TextView
+            android:id="@+id/txtBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:lines="2"
+            app:layout_constraintTop_toBottomOf="@id/txtCountLike"
+            android:padding="@dimen/size_5dp"
+            android:text="Phép lạ hạt giống đức tin"
+            android:textSize="@dimen/text_size_mini"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:gravity="top"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

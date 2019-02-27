@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Boat Safe</string>
+
+    <string name="msg_choose_loation">Nhập tên đường và chọn một gợi ý</string>
+    <string name="title_introduce">Giới thiệu</string>
+    <string name="title_accept" tools:ignore="ExtraTranslation">Xác nhận</string>
+</resources>
